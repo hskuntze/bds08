@@ -20,7 +20,34 @@
 
 .chart-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   margin-top: 50px;
+}
+
+@media (min-width: 576px) {
+  .chart-container {
+    margin-top: 40px;
+    padding: 40px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .chart-container {
+    width: 690px;
+  }
+}
+
+@media (min-width: 992px) {
+  .chart-container {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .chart-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

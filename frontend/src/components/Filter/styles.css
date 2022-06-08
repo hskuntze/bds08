@@ -2,4 +2,29 @@
   margin-top: 10px;
   padding: 40px 15px;
   width: 300px;
+  height: 130px;
+}
+
+.store-select__control {
+  width: 270px;
+}
+
+@media (min-width: 576px) {
+  .filter-container {
+    margin-top: 40px;
+    padding: 40px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-container {
+    width: 690px;
+  }
+}
+
+@media (min-width: 992px) {
+  .filter-container {
+    width: 960px;
+  }
 }

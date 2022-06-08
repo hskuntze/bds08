@@ -1,9 +1,10 @@
 import ReactApexChart from 'react-apexcharts';
+import { Gender } from '../../types';
 import { buildPieChartConfig } from './helpers';
 import './styles.css';
 
 type Props = {
-  labels?: string[];
+  labels?: Gender[];
   series?: number[];
   name: string;
   total: string;
@@ -16,13 +17,15 @@ const Chart = ({ labels = [], series = [], name, total }: Props) => {
         <h1 className="chart-title">{total}</h1>
         <span className="chart-subtitle">Total de vendas</span>
       </div>
-      <ReactApexChart
-        options={buildPieChartConfig(labels, name)}
-        type="donut"
-        width={300}
-        height={350}
-        series={series}
-      />
+      <div className="chart-content">
+        <ReactApexChart
+          options={buildPieChartConfig(labels, name)}
+          type="donut"
+          width={300}
+          height={350}
+          series={series}
+        />
+      </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ export type SalesByGender = {
 };
 
 export type PieChartConfig = {
-  labels: string[];
+  labels: Gender[];
   series: number[];
 };
 
